@@ -1431,6 +1431,17 @@
  .carousel-control-prev {
      left: inherit;
 }
+
+.carousel-image{
+    width:65%;
+    height: 350px;
+}
+@media screen and (max-width: 800px) {
+    .carousel-image{
+        width:95%;
+        height: 200px;
+    }
+}
  #main_slider .carousel-control-prev, #main_slider .carousel-control-next {
      width: 65px;
      height: 65px;
