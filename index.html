@@ -77,37 +77,33 @@
             <!-- login modal start-->
 
             <!-- Modal HTML -->
-            <div id="myModal" class="modal fade">
-                <div class="modal-dialog modal-login">
-                    <div class="modal-content">
-                        <form action="" method="post">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Login</h4>
-                                <button type="button" class="close" data-dismiss="modal"
-                                    aria-hidden="true">&times;</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" class="form-control" required="required">
-                                </div>
-                                <div class="form-group">
-                                    <div class="clearfix">
-                                        <label>Password</label>
-                                        <a href="#" class="float-right text-muted"><small>Forgot?</small></a>
-                                    </div>
 
-                                    <input type="password" class="form-control" required="required">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div id="modal-bg-my" class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="my-form">
+
+                                <div class="form-content-div">
+                                    <input class=" input-field" type="text" placeholder="Username" name="username"
+                                        id="username" required>
+                                    <input class=" input-field" type="password" placeholder="Enter Password" name="psw"
+                                        id="psw" required>
+                                    <button type="submit" class="registerbtn ">Login</button>
                                 </div>
-                            </div>
-                            <div class="modal-footer justify-content-between">
-                                <label class="form-check-label"><input type="checkbox"> Remember me</label>
-                                <input type="submit" class="btn btn-primary" value="Login">
-                            </div>
-                        </form>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <!-- login modal end-->
             <!-- registration modal start-->
 
@@ -125,8 +121,8 @@
                         <div class="modal-body">
                             <form class="my-form">
 
-                                <div class="form-content-div" xyz="fade-100% duration-6 stagger-3 ease-linear delay-20">
-                                    <input class="xyz-in input-field" type="text" placeholder="Enter Email" name="email"
+                                <div class="form-content-div">
+                                    <input class="input-field" type="text" placeholder="Enter Email" name="email"
                                         id="email" required>
                                     <input class="xyz-in input-field" type="text" placeholder="Username" name="username"
                                         id="username" required>
@@ -142,7 +138,7 @@
                                             href="#">Terms &
                                             Privacy</a>.
                                     </p>
-                                    <button type="submit" class="registerbtn xyz-in">Register</button>
+                                    <button type="submit" class="registerbtn ">Register</button>
                                 </div>
                             </form>
                         </div>
