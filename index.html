@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <title>Plinko</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header-top">
+            <div class="header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <div class="menu-area">
+                                <div class="limit-box">
+                                    <nav class="main-menu">
+                                        <ul class="menu-area-main">
+                                            <li> <a href="#myModal" data-toggle="modal">Login</a>
+                                            </li>
+                                            <li class="active"> <a data-toggle="modal" href="#exampleModal">SignUp</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+
+            <!-- login modal start-->
+
+            <!-- Modal HTML -->
+            <div id="myModal" class="modal fade">
+                <div class="modal-dialog modal-login">
+                    <div class="modal-content">
+                        <form action="" method="post">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Login</h4>
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label>Username</label>
+                                    <input type="text" class="form-control" required="required">
+                                </div>
+                                <div class="form-group">
+                                    <div class="clearfix">
+                                        <label>Password</label>
+                                        <a href="#" class="float-right text-muted"><small>Forgot?</small></a>
+                                    </div>
+
+                                    <input type="password" class="form-control" required="required">
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <label class="form-check-label"><input type="checkbox"> Remember me</label>
+                                <input type="submit" class="btn btn-primary" value="Login">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- login modal end-->
+            <!-- registration modal start-->
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div id="modal-bg-my" class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="my-form">
+
+                                <div class="form-content-div" xyz="fade-100% duration-6 stagger-3 ease-linear delay-20">
+                                    <input class="xyz-in input-field" type="text" placeholder="Enter Email" name="email"
+                                        id="email" required>
+                                    <input class="xyz-in input-field" type="text" placeholder="Username" name="username"
+                                        id="username" required>
+                                    <input class="input-field xyz-in" type="number" placeholder="phone" name="phone"
+                                        id="phone" required>
+                                    <input class="xyz-in input-field" type="password" placeholder="Enter Password"
+                                        name="psw" id="psw" required>
+                                    <input class="xyz-in input-field" type="password" placeholder="Repeat Password"
+                                        name="psw-repeat" id="psw-repeat" required>
+                                    <input class="input-field xyz-in" type="text" placeholder="referal code"
+                                        name="referal" id="referal" required>
+                                    <p class="form-para xyz-in">By creating an account you agree to our <a
+                                            href="#">Terms &
+                                            Privacy</a>.
+                                    </p>
+                                    <button type="submit" class="registerbtn xyz-in">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- registration modal end-->
+            <!-- end header -->
+            <section class="slider_section">
+                <div class="banner_main">
+
+                    <div class="container">
+
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="text-bg">
+                                    <h1>Welcome to <br> <strong class="b_bold">Our casino </strong></h1>
+                                    <span>India’s Most Trusted Rummy Website.While playing card games with family and
+                                        friends has been the most popular recreational activity, online rummy is fast
+                                        gaining widespread popularity globally. On Plinko, you can play daily
+                                        tournaments and win amazing rewards which will get credited to your account
+                                        instantly! You can also play rummy for free and win exciting prizes every
+                                        day.</span>
+                                    <a href="#">Play Now</a>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="text-img">
+                                    <figure><img src="images/img.png" /></figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </section>
+        </div>
+        </div>
+    </header>
+    <!-- about  -->
+    <!-- We are -->
+    <div id="casino" class="We_are">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage">
+                        <h2>casino</h2>
+                        <span>With industry lead strong security measures, Plinko focuses on the data safety of the
+                            players with best-in-class encryption algorithms. Players feel safe with their data on the
+                            site while playing and thereafter.<br>
+                            Fair play is one of our core values. We have incorporated defence grade ‘Quantum Random
+                            Number Generator’ technology to make sure of the utmost randomness in the gameplay
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="main_slider" class="carousel slide banner-main" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="first-slide" src="images/slide1.jpeg" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="second-slide" src="images/slide2.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="third-slide" src="images/slide3.png" alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev"> <i
+                                class='fa fa-angle-left'></i></a>
+                        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next"> <i
+                                class='fa fa-angle-right'></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end We are -->
+    <!--  footer -->
+    <footr>
+        <div class="footer top_layer ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                    </div>
+                    <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 ">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="address">
+                            <h3>SAFE & SECURE PLATFORM </h3>
+                            <p>All transactions between all software and the servers systems pass through several layers
+                                of encryption. Players can be assured that all their data is safe with us.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>© 2021 All Rights Reserved. <a href="index.html">Plinko</a></p>
+                </div>
+            </div>
+        </div>
+    </footr>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
